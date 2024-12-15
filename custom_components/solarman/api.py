@@ -44,7 +44,7 @@ class PySolarmanV5AsyncWrapper(PySolarmanV5Async):
 class PySolarmanAsync(PySolarmanV5AsyncWrapper):
     def __init__(self, address, serial, port, mb_slave_id):
         super().__init__(address, serial, port, mb_slave_id)
-        self._passthrough = False
+        self._passthrough = True
 
     async def _tcp_send_receive_frame(self, mb_request_frame):
         return mb_compatibility(await self._send_receive_v5_frame(mb_request_frame), mb_request_frame)
