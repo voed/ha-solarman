@@ -1,5 +1,5 @@
 {
-  "domain": "solarman-mbusd",
+  "domain": "solarman",
   "name": "Solarman-mbusd",
   "codeowners": ["@voed"],
   "config_flow": true,
